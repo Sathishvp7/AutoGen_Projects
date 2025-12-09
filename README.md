@@ -63,7 +63,7 @@ Complete Health Plan
 
 1. **Clone the repository** (or navigate to the project directory):
    ```bash
-   cd Scenario_iq
+   cd smart_health_assistant
    ```
 
 2. **Install dependencies**:
