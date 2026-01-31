@@ -1,0 +1,128 @@
+https://github.com/g0agill/ai_agents_hotel_project
+
+
+To clone this repository, please follow the steps below:
+
+Step 1: Install Prerequisites (if not already installed)
+Make sure you have:
+
+Git: Download Git
+
+VS Code (or any IDE of your choice): Download VS Code
+
+Python (check the repo's requirements): Download Python
+
+Step 2: Clone the Repository
+Open terminal (Command Prompt / PowerShell / Terminal).
+
+Navigate to the folder where you want to store the project.
+
+Run the following command:
+
+git clone “https://github.com/g0agill/ai_agents_hotel_project”
+
+Once cloned, navigate into the project folder:
+
+cd path_to_your_working_directory
+
+Step 3: Open the Folder in VS Code
+You can open the folder using:
+
+Command Line:
+
+code .
+
+OR Manually:
+
+Open VS Code.
+
+Go to File > Open Folder...
+
+Select the cloned path_to_your_working_directory folder
+
+Step 4: Set Up a Virtual Environment
+
+python -m venv venv
+
+source venv/bin/activate      # Mac/Linux
+
+venv\Scripts\activate         
+
+Step 5: Install Dependencies
+Since each subdirectory (studio, studio_cloud, web_app, container_app) has its own requirements.txt and environment files (.env), you need to install dependencies for each separately.
+
+Activate Virtual Environment:
+
+# Mac/Linux
+
+source venv/bin/activate
+
+# Windows
+
+venv\Scripts\activate
+
+Install Dependencies for Each Directory
+
+# For studio directory
+
+cd studio
+
+pip install -r requirements.txt
+
+
+# For studio_cloud directory
+
+cd ../studio_cloud
+
+pip install -r requirements.txt
+
+
+# For web_app directory
+
+cd ../web_app
+
+pip install -r requirements.txt
+
+
+# For container_app directory
+
+cd ../container_app
+
+pip install -r requirements.txt
+
+Step 6: Configure Environment Variables
+Edit the .env file (if needed) to adjust settings like API keys, database URLs, etc., depending on your local environment.
+
+Step 7: Run the Code 
+
+The way you run the code depends on the directory you're working with.
+
+Option 1: Running the Langgraph Server
+
+For Development Mode (In-memory server):
+
+
+Navigate to the subdirectory that contains langgraph.json (e.g., studio, studio_cloud, web_app, or container_app).
+
+
+Run the following command to start the Langgraph server in development mode: langgraph dev
+
+For Dockerized Version (if using Docker for containerized app):
+
+Navigate to the container_app folder.
+
+Run Docker Compose to bring up the services:
+
+Option 2: Running a Specific Script
+
+You can also run individual scripts, such as hotel_reservation_mas.py, if you want to test or run specific functionalities.
+
+# If the entry point is in `studio`
+
+python studio/hotel_reservation_mas.py
+
+# If the entry point is in `studio_cloud`
+
+python studio_cloud/hotel_reservation_mas.py
+
+*****************************************************************************************
